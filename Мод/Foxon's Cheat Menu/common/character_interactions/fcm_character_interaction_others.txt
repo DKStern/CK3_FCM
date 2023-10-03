@@ -1,0 +1,370 @@
+#Убить
+fcm_kill = {
+	category = fcm_interaction_category
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+	}
+
+	on_accept = {
+		scope:recipient = {		
+			death = natural 
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}
+
+#Свадьба
+fcm_marry = {
+	category = fcm_interaction_category
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+		scope:recipient = {
+			AND = { 
+				is_married = no
+				is_adult = yes
+				gender = scope:actor
+			}
+		}
+	}
+
+	on_accept = {
+		if = {
+			limit = { 
+				scope:actor = { gender = female }
+			}
+			scope:actor = {
+				marry_matrilineal = scope:recipient
+			}		
+		}
+		else = {
+			scope:actor = {		
+				marry = scope:recipient
+			}
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}
+
+#Стать друзьями
+fcm_befriend = {
+	category = fcm_interaction_category
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+		scope:recipient = {
+			NOT = { has_relation_friend = scope:actor }
+		}
+	}
+
+	on_accept = {
+		scope:actor = {		
+			set_relation_friend = scope:recipient
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}
+
+#Перестать быть друзьями
+fcm_removefriend = {
+	category = fcm_interaction_category
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+		scope:recipient = {
+			has_relation_friend = scope:actor
+		}
+	}
+
+	on_accept = {
+		scope:actor = {		
+			remove_relation_friend = scope:recipient
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}
+
+#Стать лучшими друзьями
+fcm_bebestfriend = {
+	category = fcm_interaction_category
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+		scope:recipient = {
+			NOT = { has_relation_best_friend = scope:actor }
+		}
+	}
+
+	on_accept = {
+		scope:actor = {		
+			set_relation_best_friend = scope:recipient
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}
+
+#Перестать быть лучшими друзьями
+fcm_removebestfriend = {
+	category = fcm_interaction_category
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+		scope:recipient = {
+			has_relation_best_friend = scope:actor
+		}
+	}
+
+	on_accept = {
+		scope:actor = {		
+			remove_relation_best_friend = scope:recipient
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}
+
+#Стать врагами
+fcm_berival = {
+	category = fcm_interaction_category
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+		scope:recipient = {
+			NOT = { has_relation_rival = scope:actor }
+		}
+	}
+
+	on_accept = {
+		scope:actor = {		
+			set_relation_rival = scope:recipient
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}
+
+#Перестать быть врагами
+fcm_removerival = {
+	category = fcm_interaction_category
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+		scope:recipient = {
+			has_relation_rival = scope:actor
+		}
+	}
+
+	on_accept = {
+		scope:actor = {		
+			remove_relation_rival = scope:recipient
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}
+
+#Стать любовниками
+fcm_belover = {
+	category = fcm_interaction_category
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+		NOT = { scope:recipient = { age < 16 } }
+		NOT = {
+			OR ={
+				scope:actor = {
+					has_relation_lover = scope:recipient
+				}
+				scope:actor = {
+					has_relation_soulmate = scope:recipient
+				}
+			}
+		}
+	}
+
+	on_accept = {
+		scope:actor = {		
+			set_relation_lover = scope:recipient
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}
+
+#Перестать быть любовниками
+fcm_removelover = {
+	category = fcm_interaction_category
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+		scope:recipient = {
+			has_relation_lover = scope:actor
+		}
+	}
+
+	on_accept = {
+		scope:actor = {		
+			remove_relation_lover = scope:recipient
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}
+
+#Стать родственными душами
+fcm_besoulmate = {
+	category = fcm_interaction_category
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+		NOT = { scope:recipient = { age < 16 } }
+		scope:actor = {
+			has_relation_lover = scope:recipient
+		}
+		NOT = {
+			scope:actor = {
+				has_relation_soulmate = scope:recipient
+			}
+		}
+	}
+
+	on_accept = {
+		scope:actor = {		
+			set_relation_soulmate = scope:recipient
+			remove_relation_lover = scope:recipient
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}
+
+#Перестать быть родственными душами
+fcm_removesoulmate = {
+	category = fcm_interaction_category
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+		scope:recipient = {
+			has_relation_soulmate = scope:actor
+		}
+	}
+
+	on_accept = {
+		scope:actor = {		
+			remove_relation_soulmate = scope:recipient
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}
+
+#Забеременеть
+fcm_impregnate ={
+	category = fcm_interaction_category
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:actor = scope:recipient }
+		OR = {
+			AND = {
+				scope:actor = {
+					is_male = yes
+					age >= 16
+				}
+				scope:recipient = {
+					is_female = yes
+					is_pregnant = no
+					age >= 16
+				}
+			}
+			AND = {
+				scope:recipient = {
+					is_male = yes
+					age >= 16
+				}
+				scope:actor = {
+					is_female = yes
+					is_pregnant = no
+					age >= 16
+				}
+			}
+		}
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				scope:actor = {
+					is_male = yes
+				}
+			}
+			scope:recipient = {
+				make_pregnant = {
+					father = scope:actor
+				}
+			}
+		}
+		else = {
+			scope:actor = {
+				make_pregnant = {
+					father = scope:recipient
+				}
+			}
+		}
+	}
+
+	auto_accept = yes
+	ai_will_do = 0
+}
+
+#Заключить в тюрьму
+fcm_imprison = {
+	category = fcm_interaction_category
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+	}
+
+	on_accept = {
+		scope:actor = {
+			imprison = {
+				target = scope:recipient
+				type = dungeon
+			}
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}

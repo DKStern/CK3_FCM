@@ -1,0 +1,17 @@
+fcm_commit_suicide = {
+	category = fcm_interaction_category
+	common_interaction = yes
+
+	is_shown = {
+		scope:recipient = scope:actor
+	}
+
+	on_accept = {
+		scope:actor = {		
+			death = natural 
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}

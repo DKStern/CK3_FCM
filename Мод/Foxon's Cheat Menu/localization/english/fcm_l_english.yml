@@ -1,0 +1,81 @@
+﻿l_english:
+ gcm_interaction_category:0 "Glorified's Cheat Menu"
+ gcm_suicide_attempt:0 "Attempt Suicide"
+ gcm_commit_suicide:0 "Commit Suicide"
+ gcm_kill:0 "Kill"
+ gcm_marry:0 "Marry Me"
+ gcm_befriend:0 "Befriend"
+ gcm_imprison:0 "Imprison"
+ gcm_excommunicate:0 "Excommunicate"
+ gcm_remove_excommunication:0 "Remove Excommunication"
+
+ gcm_confirm:0 "Confirm"
+
+
+ gcm_open_menu_decision:0 "Open Glorified's Cheat Menu"
+ gcm_close_menu_decision:0 "Close Glorified's Cheat Menu"
+
+ gcm_open_currency_menu_decision:0 "Open Currency Cheat Menu"
+ gcm_close_currency_menu_decision:0 "Close Currency Cheat Menu"
+
+ gcm_open_gold_menu_decision:0 "Open Gold Cheat Menu"
+ gcm_close_gold_menu_decision:0 "Close Gold Cheat Menu"
+ gcm_add_10_gold_decision:0 "Add 10 Gold"
+ gcm_add_100_gold_decision:0 "Add 100 Gold"
+ gcm_add_1000_gold_decision:0 "Add 1,000 Gold"
+ gcm_add_10000_gold_decision:0 "Add 10,000 Gold"
+
+ gcm_open_prestige_menu_decision:0 "Open Prestige Cheat Menu"
+ gcm_close_prestige_menu_decision:0 "Close Prestige Cheat Menu"
+ gcm_add_10_prestige_decision:0 "Add 10 Prestige"
+ gcm_add_100_prestige_decision:0 "Add 100 Prestige"
+ gcm_add_1000_prestige_decision:0 "Add 1,000 Prestige"
+ gcm_add_10000_prestige_decision:0 "Add 10,000 Prestige"
+
+ gcm_open_piety_menu_decision:0 "Open Piety Cheat Menu"
+ gcm_close_piety_menu_decision:0 "Close Piety Cheat Menu"
+ gcm_add_10_piety_decision:0 "Add 10 Piety"
+ gcm_add_100_piety_decision:0 "Add 100 Piety"
+ gcm_add_1000_piety_decision:0 "Add 1,000 Piety"
+ gcm_add_10000_piety_decision:0 "Add 10,000 Piety"
+
+ gcm_open_stat_menu_decision:0 "Open Stat Cheat Menu"
+ gcm_close_stat_menu_decision:0 "Close Stat Cheat Menu"
+
+ gcm_maximize_stats_decision:0 "Maximize Stats"
+
+ gcm_open_martial_menu_decision:0 "Open Martial Cheat Menu"
+ gcm_close_martial_menu_decision:0 "Close Martial Cheat Menu"
+ gcm_add_1_martial_decision:0 "Add 1 Martial"
+ gcm_add_10_martial_decision:0 "Add 10 Martial"
+ gcm_add_100_martial_decision:0 "Add 100 Martial"
+
+ gcm_open_diplomacy_menu_decision:0 "Open Diplomacy Cheat Menu"
+ gcm_close_diplomacy_menu_decision:0 "Close Diplomacy Cheat Menu"
+ gcm_add_1_diplomacy_decision:0 "Add 1 Diplomacy"
+ gcm_add_10_diplomacy_decision:0 "Add 10 Diplomacy"
+ gcm_add_100_diplomacy_decision:0 "Add 100 Diplomacy"
+
+ gcm_open_stewardship_menu_decision:0 "Open Stewardship Cheat Menu"
+ gcm_close_stewardship_menu_decision:0 "Close Stewardship Cheat Menu"
+ gcm_add_1_stewardship_decision:0 "Add 1 Stewardship"
+ gcm_add_10_stewardship_decision:0 "Add 10 Stewardship"
+ gcm_add_100_stewardship_decision:0 "Add 100 Stewardship"
+
+ gcm_open_intrigue_menu_decision:0 "Open Intrigue Cheat Menu"
+ gcm_close_intrigue_menu_decision:0 "Close Intrigue Cheat Menu"
+ gcm_add_1_intrigue_decision:0 "Add 1 Intrigue"
+ gcm_add_10_intrigue_decision:0 "Add 10 Intrigue"
+ gcm_add_100_intrigue_decision:0 "Add 100 Intrigue"
+
+ gcm_open_learning_menu_decision:0 "Open Learning Cheat Menu"
+ gcm_close_learning_menu_decision:0 "Close Learning Cheat Menu"
+ gcm_add_1_learning_decision:0 "Add 1 Learning"
+ gcm_add_10_learning_decision:0 "Add 10 Learning"
+ gcm_add_100_learning_decision:0 "Add 100 Learning"
+
+ gcm_open_prowess_menu_decision:0 "Open Prowess Cheat Menu"
+ gcm_close_prowess_menu_decision:0 "Close Prowess Cheat Menu"
+ gcm_add_1_prowess_decision:0 "Add 1 Prowess"
+ gcm_add_10_prowess_decision:0 "Add 10 Prowess"
+ gcm_add_100_prowess_decision:0 "Add 100 Prowess"

@@ -1,0 +1,4 @@
+fcm_interaction_category = {
+    index = 777
+    desc = "FOXON_CHEAT_ACTIONS"
+}
