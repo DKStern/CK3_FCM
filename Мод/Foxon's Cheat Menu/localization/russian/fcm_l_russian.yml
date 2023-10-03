@@ -1,6 +1,7 @@
 ﻿l_russian:
- fcm_interaction_category:0 "Foxon's Cheat Menu"
+ interaction_category_cheat_menu:0 "Foxon's Cheat Menu"
  fcm_commit_suicide:0 "Совершить суицид"
+ fcm_commit_suicide_desc:0 "Совершить суицид"
  fcm_kill:0 "Убить"
  fcm_marry:0 "Устроить брак"
  fcm_befriend:0 "Стать друзьями"

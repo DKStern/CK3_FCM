@@ -1,6 +1,7 @@
-#Убить
+﻿#Убить
 fcm_kill = {
-	category = fcm_interaction_category
+	category = interaction_category_cheat_menu
+	use_diplomatic_range = no
 	common_interaction = yes
 
 	is_shown = {
@@ -19,7 +20,8 @@ fcm_kill = {
 
 #Свадьба
 fcm_marry = {
-	category = fcm_interaction_category
+	category = interaction_category_cheat_menu
+	use_diplomatic_range = no
 	common_interaction = yes
 
 	is_shown = {
@@ -55,7 +57,8 @@ fcm_marry = {
 
 #Стать друзьями
 fcm_befriend = {
-	category = fcm_interaction_category
+	category = interaction_category_cheat_menu
+	use_diplomatic_range = no
 	common_interaction = yes
 
 	is_shown = {
@@ -77,7 +80,8 @@ fcm_befriend = {
 
 #Перестать быть друзьями
 fcm_removefriend = {
-	category = fcm_interaction_category
+	category = interaction_category_cheat_menu
+	use_diplomatic_range = no
 	common_interaction = yes
 
 	is_shown = {
@@ -99,7 +103,8 @@ fcm_removefriend = {
 
 #Стать лучшими друзьями
 fcm_bebestfriend = {
-	category = fcm_interaction_category
+	category = interaction_category_cheat_menu
+	use_diplomatic_range = no
 	common_interaction = yes
 
 	is_shown = {
@@ -121,7 +126,8 @@ fcm_bebestfriend = {
 
 #Перестать быть лучшими друзьями
 fcm_removebestfriend = {
-	category = fcm_interaction_category
+	category = interaction_category_cheat_menu
+	use_diplomatic_range = no
 	common_interaction = yes
 
 	is_shown = {
@@ -143,7 +149,8 @@ fcm_removebestfriend = {
 
 #Стать врагами
 fcm_berival = {
-	category = fcm_interaction_category
+	category = interaction_category_cheat_menu
+	use_diplomatic_range = no
 	common_interaction = yes
 
 	is_shown = {
@@ -165,7 +172,8 @@ fcm_berival = {
 
 #Перестать быть врагами
 fcm_removerival = {
-	category = fcm_interaction_category
+	category = interaction_category_cheat_menu
+	use_diplomatic_range = no
 	common_interaction = yes
 
 	is_shown = {
@@ -187,7 +195,8 @@ fcm_removerival = {
 
 #Стать любовниками
 fcm_belover = {
-	category = fcm_interaction_category
+	category = interaction_category_cheat_menu
+	use_diplomatic_range = no
 	common_interaction = yes
 
 	is_shown = {
@@ -217,7 +226,8 @@ fcm_belover = {
 
 #Перестать быть любовниками
 fcm_removelover = {
-	category = fcm_interaction_category
+	category = interaction_category_cheat_menu
+	use_diplomatic_range = no
 	common_interaction = yes
 
 	is_shown = {
@@ -239,7 +249,8 @@ fcm_removelover = {
 
 #Стать родственными душами
 fcm_besoulmate = {
-	category = fcm_interaction_category
+	category = interaction_category_cheat_menu
+	use_diplomatic_range = no
 	common_interaction = yes
 
 	is_shown = {
@@ -268,7 +279,8 @@ fcm_besoulmate = {
 
 #Перестать быть родственными душами
 fcm_removesoulmate = {
-	category = fcm_interaction_category
+	category = interaction_category_cheat_menu
+	use_diplomatic_range = no
 	common_interaction = yes
 
 	is_shown = {
@@ -290,7 +302,8 @@ fcm_removesoulmate = {
 
 #Забеременеть
 fcm_impregnate ={
-	category = fcm_interaction_category
+	category = interaction_category_cheat_menu
+	use_diplomatic_range = no
 	common_interaction = yes
 
 	is_shown = {
@@ -349,7 +362,8 @@ fcm_impregnate ={
 
 #Заключить в тюрьму
 fcm_imprison = {
-	category = fcm_interaction_category
+	category = interaction_category_cheat_menu
+	use_diplomatic_range = no
 	common_interaction = yes
 
 	is_shown = {

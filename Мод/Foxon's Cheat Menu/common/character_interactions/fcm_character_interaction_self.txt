@@ -1,9 +1,14 @@
-fcm_commit_suicide = {
-	category = fcm_interaction_category
+﻿fcm_commit_suicide = {
+	category = interaction_category_cheat_menu
+	desc = fcm_commit_suicide_desc
 	common_interaction = yes
+	#ignores_pending_interaction_block = yes
 
 	is_shown = {
 		scope:recipient = scope:actor
+		scope:actor = {
+			is_ai = no
+		}
 	}
 
 	on_accept = {
@@ -11,7 +16,7 @@ fcm_commit_suicide = {
 			death = natural 
 		}
 	}
-	auto_accept = yes
 
+	auto_accept = yes
 	ai_will_do = 0
 }
