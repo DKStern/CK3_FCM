@@ -1,0 +1,14 @@
+﻿l_russian:
+ fcm_character_editor.0001.title: "Чит-редактор персонажа"
+ fcm_character_editor.0001.desc: "В данном чит-редакторе можно изменить выбранного персонажа"
+ fcm_character_editor.0001.a: "Дать навыки"
+ fcm_character_editor.0001.b: "Отмена"
+
+ fcm_character_editor.0002.title: "Чит-редактор персонажа: дать навыки персонажу"
+ fcm_character_editor.0002.desc: "Дать персонажу определённые навыки навыки"
+ fcm_character_editor.0002.a: "Сделать управляющим"
+ fcm_character_editor.0002.b: "Сделать канцлером"
+ fcm_character_editor.0002.c: "Сделать маршалом"
+ fcm_character_editor.0002.d: "Сделать тайным советником"
+ fcm_character_editor.0002.e: "Сделать священником"
+ fcm_character_editor.0002.f: "Отмена"

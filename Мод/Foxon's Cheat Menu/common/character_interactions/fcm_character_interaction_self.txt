@@ -1,5 +1,5 @@
 ﻿fcm_commit_suicide = {
-	category = interaction_category_cheat_menu
+	category = interaction_category_uncategorized
 	desc = fcm_commit_suicide_desc
 	common_interaction = yes
 	#ignores_pending_interaction_block = yes

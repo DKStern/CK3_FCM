@@ -1,6 +1,6 @@
 ﻿#Убить
 fcm_kill = {
-	category = interaction_category_cheat_menu
+	category = interaction_category_hostile
 	use_diplomatic_range = no
 	common_interaction = yes
 
@@ -20,7 +20,7 @@ fcm_kill = {
 
 #Свадьба
 fcm_marry = {
-	category = interaction_category_cheat_menu
+	category = interaction_category_diplomacy
 	use_diplomatic_range = no
 	common_interaction = yes
 
@@ -57,7 +57,7 @@ fcm_marry = {
 
 #Стать друзьями
 fcm_befriend = {
-	category = interaction_category_cheat_menu
+	category = interaction_category_friendly
 	use_diplomatic_range = no
 	common_interaction = yes
 
@@ -80,7 +80,7 @@ fcm_befriend = {
 
 #Перестать быть друзьями
 fcm_removefriend = {
-	category = interaction_category_cheat_menu
+	category = interaction_category_friendly
 	use_diplomatic_range = no
 	common_interaction = yes
 
@@ -103,7 +103,7 @@ fcm_removefriend = {
 
 #Стать лучшими друзьями
 fcm_bebestfriend = {
-	category = interaction_category_cheat_menu
+	category = interaction_category_friendly
 	use_diplomatic_range = no
 	common_interaction = yes
 
@@ -126,7 +126,7 @@ fcm_bebestfriend = {
 
 #Перестать быть лучшими друзьями
 fcm_removebestfriend = {
-	category = interaction_category_cheat_menu
+	category = interaction_category_friendly
 	use_diplomatic_range = no
 	common_interaction = yes
 
@@ -149,7 +149,7 @@ fcm_removebestfriend = {
 
 #Стать врагами
 fcm_berival = {
-	category = interaction_category_cheat_menu
+	category = interaction_category_hostile
 	use_diplomatic_range = no
 	common_interaction = yes
 
@@ -172,7 +172,7 @@ fcm_berival = {
 
 #Перестать быть врагами
 fcm_removerival = {
-	category = interaction_category_cheat_menu
+	category = interaction_category_hostile
 	use_diplomatic_range = no
 	common_interaction = yes
 
@@ -193,9 +193,55 @@ fcm_removerival = {
 	ai_will_do = 0
 }
 
+#Стать заклятыми врагами
+fcm_benemesis = {
+	category = interaction_category_hostile
+	use_diplomatic_range = no
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+		scope:recipient = {
+			NOT = { has_relation_nemesis = scope:actor }
+		}
+	}
+
+	on_accept = {
+		scope:actor = {		
+			set_relation_nemesis = scope:recipient
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}
+
+#Перестать быть заклятыми врагами
+fcm_removenemesis = {
+	category = interaction_category_hostile
+	use_diplomatic_range = no
+	common_interaction = yes
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+		scope:recipient = {
+			has_relation_nemesis = scope:actor
+		}
+	}
+
+	on_accept = {
+		scope:actor = {		
+			remove_relation_nemesis = scope:recipient
+		}
+	}
+	auto_accept = yes
+
+	ai_will_do = 0
+}
+
 #Стать любовниками
 fcm_belover = {
-	category = interaction_category_cheat_menu
+	category = interaction_category_friendly
 	use_diplomatic_range = no
 	common_interaction = yes
 
@@ -226,7 +272,7 @@ fcm_belover = {
 
 #Перестать быть любовниками
 fcm_removelover = {
-	category = interaction_category_cheat_menu
+	category = interaction_category_friendly
 	use_diplomatic_range = no
 	common_interaction = yes
 
@@ -249,7 +295,7 @@ fcm_removelover = {
 
 #Стать родственными душами
 fcm_besoulmate = {
-	category = interaction_category_cheat_menu
+	category = interaction_category_friendly
 	use_diplomatic_range = no
 	common_interaction = yes
 
@@ -279,7 +325,7 @@ fcm_besoulmate = {
 
 #Перестать быть родственными душами
 fcm_removesoulmate = {
-	category = interaction_category_cheat_menu
+	category = interaction_category_friendly
 	use_diplomatic_range = no
 	common_interaction = yes
 
@@ -302,7 +348,7 @@ fcm_removesoulmate = {
 
 #Забеременеть
 fcm_impregnate ={
-	category = interaction_category_cheat_menu
+	category = interaction_category_friendly
 	use_diplomatic_range = no
 	common_interaction = yes
 
@@ -362,7 +408,7 @@ fcm_impregnate ={
 
 #Заключить в тюрьму
 fcm_imprison = {
-	category = interaction_category_cheat_menu
+	category = interaction_category_prison
 	use_diplomatic_range = no
 	common_interaction = yes
 
